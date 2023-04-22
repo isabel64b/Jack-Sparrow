@@ -1,0 +1,302 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jack Sparrow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Jack Sparrow </b></h1>
+    <h6> Piratas del<span class="w3-tag">Caribe</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/banner.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Capitán Jack Sparrow</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Capitán del Perla Negra</h3>
+          <h5>pero solo por 2 años, despues lo amotinaron y abandonaron en una isla
+              <span class="w3-opacity">XD</span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="/img/jack.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> Jack Teague más conocido como Capitán Jack Sparrow es un legendario pirata de Todos los Mares y un irreverente embaucador del Caribe. Un capitán de moralidad y sobriedad dudosas, maestro de la auto-promoción e interés propio. El primer amor de Jack fue el mar,el segundo su amado barco el Perla Negra,el tercero la única mujer quien ama y se enamoró es de Angelica Teach. Pero un día creció en Pirates of Caribbean dead men no tell tales. jack fue el 3 de los Teague Sparrow que sigue vivo.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/Teague Sparrow.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Teague Sparrow <span class="w3-opacity w3-medium">May 25 de 2007 5:02 PM</span></h4>
+                <p>Jacki, el mejor de los Sparrow </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3> Uno de los piratas más temidos del Caribe.</h3>
+          <h5>y mas odiado tambien<span class="w3-opacity">  jajaja</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/jack corriendo.webp" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p>Se trata de un personaje traicionero, que sobrevive en la mayoría de ocasiones usando su ingenio y negociando en lugar de usar las armas y la fuerza; aunque bien es cierto que lucha si es necesario, siempre prefiere huir de las situaciones más peligrosas. En la primera película, Sparrow aparece buscando recuperar su barco La Perla Negra, que había perdido tras un motín encabezado por Hector Barbossa, y en las secuelas intenta escapar de su deuda de sangre contraída con el legendario Davy Jones mientras lucha con la Compañía Británica de las Indias Orientales.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Hector Barbossa.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Barbossa<span class="w3-opacity w3-medium">Jun 15 de 2011 3:18 PM</span></h4>
+                <p>El perla siempre sera ¡MIO!</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Joshamee Gibbs.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Gibbs <span class="w3-opacity w3-medium">Jun 21, 2011, 10:32 AM</span></h4>
+                <p>¿si sabes que ya te robamos el perla verdad?
+                  pero no sabemos como sacarlo de la botella
+                </p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Angelica Teach.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angelica <span class="w3-opacity w3-medium">Ago 7, 2011, 11:12 AM</span></h4>
+                <p>Jaack, ya escape de la isla 
+                  !TE ENCONTRARE¡
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/lema.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Lema Pirata</h4>
+          <p>Arrasa con lo que veas y generoso no seas</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Post mas gracioosos</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/jack f.avif" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Jack Sparrow</span>
+            <br>
+            <span>El problema no es el problema. El problema es tu actitud con el problema, ¿entiendes?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Teague Sparrow.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Teague Sparrow</span>
+            <br>
+            <span>¿crees que mi cara ya estuvo en la fuente de la juventud?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Hector Barbossa.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Barbossa</span>
+            <br>
+            <span>¡Agarrad vuestras armas, que vamos a hacer un abordaje pirata, y si alguno se mueve, lo volamos por los aires!</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/Joshamee Gibbs.webp" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Gibbs</span>
+            <br>
+            <span>¿Qué tiene un loro que yo no tenga?</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Cine</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Acción</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Peliculas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Aventura</span> 
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Piratas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Comedia</span> 
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Siglo XVII</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mitos</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fantacia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Paranormal</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Personajes secundarios -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Personajes Memorables</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="img/Will_Turner.webp" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/Davy-Jones.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/calypso.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/pintel y ragetti.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
